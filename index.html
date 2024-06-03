@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ezequiel">
+    <title>Ezequiel</title>
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/dist/css/theme-elements.css">
+    <link rel="stylesheet" href="assets/dist/css/default.css">
+    <link rel="stylesheet" href="assets/vendor/sweetalert/sweetalert.min.css">
+    <link rel="stylesheet" href="assets/vendor/animate/animate.css">
+    <link rel="stylesheet" href="assets/dist/css/app.css">
+
+    <link rel="stylesheet" href="assets/dist/css/simple-line-icons.min.css">
+
+    <script src="assets/dist/js/modernizr.min.js"></script>
+
+    <style>
+       
+        #text-footer {
+            font-family: 'Arial', sans-serif;
+            font-size: 2rem;
+            color: #00f;
+            text-align: center;
+            text-shadow: 0 0 5px #fff,
+                         0 0 10px #fff,
+                         0 0 20px #00f,
+                         0 0 30px #00f,
+                         0 0 40px #00f,
+                         0 0 50px #00f,
+                         0 0 75px #00f;
+            animation: neon 1.5s infinite alternate;
+        }
+
+        @keyframes neon {
+            from {
+                text-shadow: 0 0 5px #fff,
+                             0 0 10px #fff,
+                             0 0 20px #00f,
+                             0 0 30px #00f,
+                             0 0 40px #00f,
+                             0 0 50px #00f,
+                             0 0 75px #00f;
+            }
+            to {
+                text-shadow: 0 0 10px #fff,
+                             0 0 20px #fff,
+                             0 0 30px #00f,
+                             0 0 40px #00f,
+                             0 0 50px #00f,
+                             0 0 60px #00f,
+                             0 0 70px #00f,
+                             0 0 100px #00f;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="body"
+        style="background-image: url('assets/resources/img/background.jpeg');background-size: cover;background-repeat: no-repeat;background-attachment: fixed;background-position: center;min-height: 100vh">
+
+        <div role="main" class="main">
+
+            <div class="container d-flex align-items-center col-8 col-md-8 col-lg-3 p-3" style="height: 100vh">
+
+                <div class="py-3" style="background-color: rgba(0, 0, 0, 0.3)">
+
+                    <div class="text-center mb-5">
+                        <img src="assets/resources/img/freefire.png"
+                            class="appear-animation animated rubberBand appear-animation-visible"
+                            data-appear-animation="rubberBand" data-appear-animation-delay="0"
+                            data-appear-animation-duration="1s" style="animation-duration: 1s; animation-delay: 0ms;"
+                            alt="Freefire" width="200px">
+                    </div>
+
+                    <div class="row justify-content-center sticky-top">
+                        <div class="col-10 col-md-8 col-lg-8">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                    style="background-color: rgba(0, 0, 0, 0.6); border: none">
+                                    <img src="assets/resources/img/icon-user.png" width="32px" alt="">
+                                </span>
+                                <input class="form-control text-1 text-white" id="insert-your-id" type="number"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Ingrese ID" required>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                    style="background-color: rgba(0, 0, 0, 0.6); border: none">
+                                    <img src="assets/resources/img/diamond.png" width="32px" alt="">
+                                </span>
+                                <input class="form-control text-1 text-white" id="diamonds" type="number"
+                                    style="background-color: rgba(0, 0, 0, 0.6);" placeholder="Diamantes"
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="d-none nav nav-pills sort-source sort-source-style-3 justify-content-center"
+                        data-sort-id="portfolio" data-option-key="filter"
+                        data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}"></ul>
+
+                    <div class="row justify-content-center my-2">
+                        <button id="generate" type="button" class="btn btn-dark mt-1"
+                            style="border-radius: 1%; background-color: rgba(0, 0, 0, 0.5)">
+                            <span style="font-size: 1.5rem; font-family: 'orbitron', sans-serif;">ENVIAR</span>
+                        </button>
+                    </div>
+
+                    <div class="text-center">
+                        <img id="image-in-body" src="assets/resources/img/image.png" width="200px" alt="">
+                    </div>
+
+                    <h4 id="text-footer" class="text-center mt-1" style="color: #000">
+                        @Ezequiel
+                    </h4>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Vendor Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/vendor/libs/common.min.js"></script>
+    <script src="assets/vendor/libs/isotope.min.js"></script>
+    <script src="assets/dist/js/theme.js"></script>
+    <script src="assets/dist/js/init.js"></script>
+    <script src="assets/vendor/sweetalert/sweetalert.min.js"></script>
+    <script src="assets/dist/js/app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+</body>
+
+</html>
